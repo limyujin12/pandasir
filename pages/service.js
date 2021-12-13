@@ -1,5 +1,6 @@
 import React from 'react'
-import  SimpleImageSlider  from 'react-simple-image-slider';
+import SimpleImageSlider from 'react-simple-image-slider';
+
   const images = [
     { url: "image/IMG_5556.jpg" },
     { url: "image/IMG_5627.jpg" },
@@ -13,7 +14,7 @@ function Service() {
         <div className="about_sc">
           <div className="about_sc_dt">
             <h3>Service</h3>
-            <span>Office, Restaurant and House</span>
+            <span>Office, Restaurant and House Interior Design </span>
           </div>
           <div className="service_slider">
             <SimpleImageSlider
@@ -23,54 +24,6 @@ function Service() {
               showBullets={true}
               showNavs={true}
             />
-          </div>
-        </div>
-
-        <div className="Service_offer">
-          <div className="service_office">
-            <h3>Office</h3>
-            <div className="service_img">
-              <ul>
-                <li>
-                  <img src=""></img>
-                  <span>장소 이름</span>
-                </li>
-                <li>
-                  <img src=""></img>
-                  <span>장소 이름</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="service_restuarant">
-            <h3>Restuarant</h3>
-            <div className="service_img">
-              <ul>
-                <li>
-                  <img src=""></img>
-                  <span>장소 이름</span>
-                </li>
-                <li>
-                  <img src=""></img>
-                  <span>장소 이름</span>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="service_house">
-            <h3>house</h3>
-            <div className="service_img">
-              <ul>
-                <li>
-                  <img src=""></img>
-                  <span>장소 이름</span>
-                </li>
-                <li>
-                  <img src=""></img>
-                  <span>장소 이름</span>
-                </li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>

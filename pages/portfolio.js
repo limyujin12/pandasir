@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback } from 'react'
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { photos } from "../src/page/main/photos";
@@ -17,7 +17,8 @@ function Portfolio() {
     setViewerIsOpen(false);
   };
     return (
-      <div>
+      <div className='ourproject_name'>
+        <h2>Our project</h2>
         <div className="gallery_img">
           <Gallery
             photos={photos}

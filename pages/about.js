@@ -56,6 +56,9 @@ function About() {
           <div className="about_sc_ad_img"></div>
           <div className="about_sc_contact">
             <ul>
+              <li>
+                <img src="/image/locationmap.png"></img>
+              </li>
               <li>대구광역시 남구 대덕로 40길 1</li>
               <li>Mobile:010-5678-5857| Office:053-471-1655| </li>
             </ul>

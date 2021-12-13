@@ -6,14 +6,14 @@ function about() {
         <div className="about_inside_img">
           <div className="about-img1">
             <img
-              src="/image/5bd7eb8692e00.jpg"
+              src="/image/1.jpg"
               width={311}
               height={466}
               alt=""
             />
           </div>
           <div className="about_img2">
-            <img src="/image/5bd7fa46a1734.jpg" width={289} height={229} alt="" />
+            <img src="/image/imweb2.jpg" width={289} height={229} alt="" />
           </div>
         </div>
         <div className="about_inside_detail">
