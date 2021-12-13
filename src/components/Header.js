@@ -1,6 +1,4 @@
-import React from 'react'
-import Image from 'next/image';
-import About from './about';
+import React from "react";
 
 function Header() {
   return (
@@ -12,9 +10,9 @@ function Header() {
               <a href="index.html" title="">
                 <img
                   src="/image/panda_logo.png"
-                  width={112}
-                  height={28}
-                  alt=""
+                  width="112"
+                  height="28"
+                  alt="팬더선생"
                 />
               </a>
             </div>
@@ -27,10 +25,7 @@ function Header() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="\src\components\about.js"
-                    title=""
-                  >
+                  <a href="\src\components\About_page.js" title="">
                     About Us
                   </a>
                 </li>
@@ -76,4 +71,4 @@ function Header() {
   );
 }
 
-export default Header
+export default Header;

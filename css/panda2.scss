@@ -36,13 +36,7 @@ header {
     width: 600px;
   }
   .about_img2 {
-    overflow: hidden;
-    width: 290px;
-    height: 230px;
     margin-left: 30px;
-    img {
-      margin-top: -102px;
-    }
   }
   .about_inside_detail {
     margin-left: 50px;
@@ -50,32 +44,4 @@ header {
     flex-direction: column;
     justify-content: center;
   }
-}
-.about_sc {
-  width: 100%;
-  background-color: whitesmoke;
-  display: flex;
-  height: 600px;
-  margin-top: 50px;
-}
-.about_sc_dt {
-  align-items: center;
-  margin-left: 20%;
-}
-.service_slider {
-  margin-left: auto;
-  margin-top: 50px;
-  margin-right: 100px;
-}
-.about_sc_ad {
-  height: 600px;
-  text-align: center;
-  margin-top: 50px;
-}
-.ourproject_name {
-  text-align: center;
-  width: 1500px;
-  height: 50px;
-  margin: 20px;
-  align-items: center;
 }
