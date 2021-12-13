@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
-import About_page from './About_page';
+import About from './about';
 
 function Header() {
   return (
@@ -28,7 +28,7 @@ function Header() {
                 </li>
                 <li>
                   <a
-                    href="\src\components\About_page.js"
+                    href="\src\components\about.js"
                     title=""
                   >
                     About Us

@@ -1,13 +1,13 @@
 import React from 'react'
-import { SimpleImageSlider } from 'react-simple-image-slider';
+import  SimpleImageSlider  from 'react-simple-image-slider';
+  const images = [
+    { url: "image/IMG_5556.jpg" },
+    { url: "image/IMG_5627.jpg" },
+    { url: "image/IMG_5712.jpg" },
+  ];
 
-const images = [
-  { url: "images/IMG_5556.jpg" },
-  { url: "images/IMG_5627.jpg" },
-  { url: "images/IMG_5712.jpg" },
-];
+function Service() {
 
-function Service_page() {
     return (
       <div>
         <div className="about_sc">
@@ -77,4 +77,4 @@ function Service_page() {
     );
 }
 
-export default Service_page
+export default Service;

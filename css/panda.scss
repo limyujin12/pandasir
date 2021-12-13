@@ -45,3 +45,24 @@ header {
     justify-content: center;
   }
 }
+.about_sc {
+  width: 100%;
+  background-color: whitesmoke;
+  display: flex;
+  height: 600px;
+  margin-top: 50px;
+}
+.about_sc_dt {
+  align-items: center;
+  margin-left: 20%;
+}
+.service_slider {
+  margin-left: auto;
+  margin-top: 50px;
+  margin-right: 100px;
+}
+.about_sc_ad {
+  height: 600px;
+  text-align: center;
+  margin-top: 50px;
+}

@@ -1,4 +1,10 @@
 import React from 'react'
+import SimpleImageSlider from "react-simple-image-slider";
+const images = [
+  { url: "image/IMG_5556.jpg" },
+  { url: "image/IMG_5627.jpg" },
+  { url: "image/IMG_5712.jpg" },
+];
 
 function About() {
     return (
@@ -33,7 +39,13 @@ function About() {
             <span>Office, Restaurant and House</span>
           </div>
           <div className="service_slider">
-            <reat-SimpleImageSlider></reat-SimpleImageSlider>
+            <SimpleImageSlider
+              width={896}
+              height={504}
+              images={images}
+              showBullets={true}
+              showNavs={true}
+            />
           </div>
         </div>
         <div className="about_sc_ad">
@@ -42,11 +54,11 @@ function About() {
             <span>찾아오시는 길</span>
           </div>
           <div className="about_sc_ad_img"></div>
-                <div className="about_sc_contact">
-                    <ul>
-                        <li>대구광역시 남구 대덕로 40길 1</li>
-                        <li>Mobile:010-5678-5857| Office:053-471-1655| </li>
-                    </ul>
+          <div className="about_sc_contact">
+            <ul>
+              <li>대구광역시 남구 대덕로 40길 1</li>
+              <li>Mobile:010-5678-5857| Office:053-471-1655| </li>
+            </ul>
           </div>
         </div>
       </div>
