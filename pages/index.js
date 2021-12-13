@@ -1,55 +1,126 @@
 import React, { useState, useCallback, useEffect } from "react";
-import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
-import { photos } from "../src/page/main/photos";
 import Header from "../src/components/Header";
 import MainVisual from "../src/components/MainVisual";
 import About from "../src/components/about";
+import ResponseiveGallery from "../src/view/ResponseiveGallery";
+
+const DEFAULT_IMAGES = [
+  {
+    src: "/image/img1.jpg",
+    thumbnail: "/image/img1.jpg",
+    caption: "Image 1",
+  },
+  {
+    src: "/image/img2.jpg",
+    thumbnail: "/image/img2.jpg",
+    caption: "Image 2",
+  },
+  {
+    src: "/image/img3.jpg",
+    thumbnail: "/image/img3.jpg",
+    caption: "Image 3",
+  },
+  {
+    src: "/image/img4.jpg",
+    thumbnail: "/image/img4.jpg",
+    caption: "Image 4",
+  },
+  {
+    src: "/image/img5.jpg",
+    thumbnail: "/image/img5.jpg",
+    caption: "Image 5",
+  },
+  {
+    src: "/image/img6.jpg",
+    thumbnail: "/image/img6.jpg",
+    caption: "Image 1",
+  },
+  {
+    src: "/image/img7.jpg",
+    thumbnail: "/image/img7.jpg",
+    caption: "Image 2",
+  },
+  {
+    src: "/image/img8.jpg",
+    thumbnail: "/image/img8.jpg",
+    caption: "Image 3",
+  },
+  {
+    src: "/image/img9.jpg",
+    thumbnail: "/image/img9.jpg",
+    caption: "Image 4",
+  },
+  {
+    src: "/image/img10.jpg",
+    thumbnail: "/image/img10.jpg",
+    caption: "Image 5",
+  },
+  {
+    src: "/image/img1.jpg",
+    thumbnail: "/image/img11.jpg",
+    caption: "Image 1",
+  },
+  {
+    src: "/image/img2.jpg",
+    thumbnail: "/image/img12.jpg",
+    caption: "Image 2",
+  },
+  {
+    src: "/image/img3.jpg",
+    thumbnail: "/image/img13.jpg",
+    caption: "Image 3",
+  },
+  {
+    src: "/image/img4.jpg",
+    thumbnail: "/image/img14.jpg",
+    caption: "Image 4",
+  },
+  {
+    src: "/image/img5.jpg",
+    thumbnail: "/image/img15.jpg",
+    caption: "Image 5",
+  },
+  {
+    src: "/image/img6.jpg",
+    thumbnail: "/image/img16.jpg",
+    caption: "Image 1",
+  },
+  {
+    src: "/image/img7.jpg",
+    thumbnail: "/image/img17.jpg",
+    caption: "Image 2",
+  },
+  {
+    src: "/image/img8.jpg",
+    thumbnail: "/image/img18.jpg",
+    caption: "Image 3",
+  },
+  {
+    src: "/image/img9.jpg",
+    thumbnail: "/image/img19.jpg",
+    caption: "Image 4",
+  },
+  {
+    src: "/image/img10.jpg",
+    thumbnail: "/image/img20.jpg",
+    caption: "Image 5",
+  },
+];
 
 function index() {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
-
-  const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  }, []);
-
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-  };
-
-  const imgArray = [];
-
-  useEffect(async () => {
-    var img = new Image();
-    var _width, _height;
-    for (let i = 1; i < 46; i++) {
-      img.src = "/image/img" + i + ".jpg";
-      const wait = (timeToDelay) =>
-        new Promise((resolve) => setTimeout(resolve, timeToDelay));
-      _width = img.width;
-      _height = img.height;
-      imgArray.push(_width + "*" + _height);
-      await wait(10);
-      // await setTimeout(() => {
-      //   _width = img.width;
-      //   _height = img.height;
-      //   imgArray.push(_width + "*" + _height);
-      // }, i * 100);
-    }
-
-    console.log("imgArray", imgArray);
-  }, []);
-
   return (
     <div>
       <Header />
       <MainVisual />
       <About />
-
-      <div className="gallery_img">
+      <ResponseiveGallery
+        images={DEFAULT_IMAGES.map(({ src, thumbnail, caption }) => ({
+          src,
+          thumbnail,
+          caption,
+        }))}
+      />
+      {/* <div className="gallery_img">
         <Gallery photos={photos} onClick={openLightbox} />
         <ModalGateway>
           {viewerIsOpen ? (
@@ -65,7 +136,7 @@ function index() {
             </Modal>
           ) : null}
         </ModalGateway>
-      </div>
+      </div> */}
     </div>
   );
 }

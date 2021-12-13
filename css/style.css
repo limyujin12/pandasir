@@ -3109,3 +3109,13 @@ header.sticky.header-bg nav > ul > li {
 .text-info {
   color: #fff !important;
 }
+
+.grid-item {
+  background: #ccc;
+}
+
+.grid-item > img {
+  margin-bottom: 10px;
+  display: block;
+  width: 300px;
+}
