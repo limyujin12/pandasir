@@ -1,0 +1,47 @@
+.gallery_img {
+  width: 1280px;
+  margin: 0 auto;
+}
+header {
+  background-color: white;
+  .sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  }
+}
+.mainvis_imgbox {
+  width: 395px !important;
+  height: 425px;
+  background-color: #0d6b68;
+  padding: 0;
+  max-width: 395px;
+  position: absolute;
+  right: 586px;
+  top: 203px;
+  img {
+    margin: 20px 0 0 20px;
+  }
+}
+.about_inside {
+  display: flex;
+
+  width: 1280px;
+  margin: 0 auto;
+  .about_inside_img {
+    display: flex;
+    width: 600px;
+  }
+  .about_img2 {
+    margin-left: 30px;
+  }
+  .about_inside_detail {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
